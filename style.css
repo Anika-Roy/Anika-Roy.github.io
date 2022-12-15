@@ -197,7 +197,7 @@ header {
 
 /*to make the menu cover a part of the page*/
 .nav-open .nav {
-    transform: translateX(75%);
+    transform: translateX(70%);
 }
 
 /*to make sure the menu bar is always available even when you scroll*/
@@ -253,6 +253,7 @@ html {
 .intro {
     position: relative;
     width: max-content;
+    margin: auto;
 }
 
 
@@ -267,7 +268,7 @@ html {
     .intro {
         display: grid;
         width: min-content;
-        margin: 0 auto;
+        margin: auto;
         grid-column-gap: 1em;
         grid-template-areas:
             "img title"
@@ -354,20 +355,24 @@ html {
 .achievements {
     position: relative;
     width: max-content;
+    margin: auto;
 }
 
 .achievements__img {
     box-shadow: var(--bs);
-    height: 25em;
-    width: 40em;
+    height: 20em;
+    width: 27em;
     margin: 2px;
     border: 2px solid black;
     padding: 5px;
 
 
 }
+.section__title--achievements {
+    margin-top: 0.5em;
+}
 
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
     .achievements {
         display: grid;
         width: min-content;
@@ -428,18 +433,20 @@ hr {
 
 .qualities {
     position: relative;
-    width: max-content;
+    width: fit-content;
+    margin: auto;
     /* border-top-color: #c68de3;
     border-top-width: 2px;
     border-top-style: double; */
 
 }
 
-/* .section__title--qualities {
-    border: #c68de3 2px;
-} */
+.section__title--qualities {
+    margin-top:0.25em;
+    margin-left: 0em;
+}
 
-@media (min-width: 600px) {
+@media (min-width: 1300px) {
     .qualities {
         display: grid;
         grid-column-gap: 1em;
